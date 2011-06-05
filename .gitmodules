@@ -1,0 +1,3 @@
+[submodule "auto-fu"]
+	path = auto-fu
+	url = git@github.com:erguolinge/auto-fu.zsh.git
