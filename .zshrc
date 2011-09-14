@@ -22,7 +22,7 @@ export ZSH_THEME="candy"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rails3 git git-flow ruby gem rvm brew github osx)
+plugins=(git git-flow ruby gem rvm brew github osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -36,11 +36,24 @@ zstyle ':completion:*' completer _oldlist _complete
 # % zle -N zle-keymap-select auto-fu-zle-keymap-select
 # (This enables the afu-vicmd keymap switching coordinates a bit.)
 #
+
+
 alias ls='ls -GwF'
 alias ll='ls -l'
 alias la='ll -a'
 
 alias g='git'
+alias gl='g log'
+alias gll='gl --oneline --graph'
+alias e='vi'
+
+alias o='open'
+
+alias r='rails'
+alias rs='rake spec'
+
+# 音を消す
+setopt no_beep
 
 [[ -s "/Users/erguolinge/.rvm/scripts/rvm" ]] && source "/Users/erguolinge/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
