@@ -55,6 +55,6 @@ alias rs='rake spec'
 # 音を消す
 setopt no_beep
 
-[[ -s "/Users/erguolinge/.rvm/scripts/rvm" ]] && source "/Users/erguolinge/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 
 export PATH=/usr/local/git/bin:/Applications/android-sdk-mac_86/tools:$PATH
