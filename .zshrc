@@ -52,6 +52,8 @@ alias o='open'
 alias r='rails'
 alias rs='rake spec'
 
+alias py='python'
+alias ipy='ipython'
 # 音を消す
 setopt no_beep
 
