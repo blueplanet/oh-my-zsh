@@ -59,4 +59,4 @@ setopt no_beep
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 
-export PATH=/usr/local/git/bin:/Applications/android-sdk-mac_86/tools:$PATH
+export PATH=/usr/local/bin:$PATH
