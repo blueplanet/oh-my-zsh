@@ -54,9 +54,12 @@ alias rs='rake spec'
 
 alias py='python'
 alias ipy='ipython'
+alias ti='tmuxinator'
+
 # 音を消す
 setopt no_beep
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 export PATH=/usr/local/bin:$PATH
