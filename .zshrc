@@ -6,7 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # export ZSH_THEME="robbyrussell"
-export ZSH_THEME="candy"
+export ZSH_THEME="robbyrussell"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -37,24 +37,7 @@ zstyle ':completion:*' completer _oldlist _complete
 # (This enables the afu-vicmd keymap switching coordinates a bit.)
 #
 
-
-alias ls='ls -GwF'
-alias ll='ls -l'
-alias la='ll -a'
-
-alias g='git'
-alias gl='g log'
-alias gll='gl --oneline --graph'
-alias e='vi'
-
-alias o='open'
-
-alias r='rails'
-alias rs='rake spec'
-
-alias py='python'
-alias ipy='ipython'
-alias ti='tmuxinator'
+export EDITOR=vi
 
 # 音を消す
 setopt no_beep
@@ -63,3 +46,4 @@ setopt no_beep
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 export PATH=/usr/local/bin:$PATH
+
