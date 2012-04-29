@@ -27,4 +27,4 @@ alias tio='ti open'
 alias tik='tmux kill-session'
 
 # Emacs
-alias e='/Applications/Emacs.app/Contents/MacOS/Emacs'
+alias e='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient'
