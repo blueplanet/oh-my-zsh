@@ -13,18 +13,13 @@ alias gfs='gf feature start'
 alias gff='gf feature finish'
 
 # editor
-alias e='vi'
 alias o='open'
 
 # ruby / rails
 alias r='rails'
 alias rs='rake spec'
-
-# tmux
-alias ti='tmuxinator'
-alias tis='ti start'
-alias tio='ti open'
-alias tik='tmux kill-session'
+alias b=bundle
+alias be='bundle exec'
 
 # Emacs
 alias e='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient'

@@ -42,8 +42,8 @@ export EDITOR=vi
 # 音を消す
 setopt no_beep
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+# rbenv
+eval "$(rbenv init -)"
 
 export PATH=/usr/local/bin:$PATH
 
