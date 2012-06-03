@@ -19,6 +19,7 @@ alias o='open'
 alias r='rails'
 alias rs='rake spec'
 alias b=bundle
+alias bi='bundle install'
 alias be='bundle exec'
 
 # Emacs
