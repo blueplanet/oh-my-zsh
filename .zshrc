@@ -37,7 +37,7 @@ zstyle ':completion:*' completer _oldlist _complete
 # (This enables the afu-vicmd keymap switching coordinates a bit.)
 #
 
-export EDITOR=vi
+export EDITOR="subl -w"
 
 # 音を消す
 setopt no_beep

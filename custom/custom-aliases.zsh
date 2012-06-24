@@ -23,4 +23,4 @@ alias bi='bundle install'
 alias be='bundle exec'
 
 # Emacs
-alias e='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient'
+alias e='subl'
