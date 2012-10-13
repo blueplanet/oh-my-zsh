@@ -5,6 +5,8 @@ alias la='ll -a'
 
 # git
 alias g='git'
+alias ga="g add"
+alias gc='g commit'
 alias gd='g diff --word-diff'
 alias gs='g st'
 alias gl='g log --oneline --graph --decorate'
