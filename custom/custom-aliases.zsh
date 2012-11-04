@@ -7,6 +7,7 @@ alias la='ll -a'
 alias g='git'
 alias ga="g add"
 alias gc='g commit'
+alias gp='g push'
 alias gd='g diff --word-diff'
 alias gs='g st'
 alias gl='g log --oneline --graph --decorate'
@@ -20,6 +21,8 @@ alias o='open'
 # ruby / rails
 alias r='rails'
 alias rs='rake spec'
+alias rdm='rake db:migrate'
+alias rdtp='rake db:test:prepare'
 alias b=bundle
 alias bi='bundle install'
 alias be='bundle exec'

@@ -6,8 +6,9 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # export ZSH_THEME="robbyrussell"
-# export ZSH_THEME="bira"
-export ZSH_THEME="gallois"
+export ZSH_THEME="bira"
+# export ZSH_THEME="gallois"
+# export ZSH_THEME="powerline"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -23,7 +24,7 @@ export ZSH_THEME="gallois"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow ruby gem rvm brew github osx)
+plugins=(git-flow ruby gem rvm brew github osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -48,3 +49,5 @@ eval "$(rbenv init -)"
 
 export PATH=/usr/local/bin:$PATH
 
+# tmuxinator
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
