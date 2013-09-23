@@ -24,7 +24,7 @@ export ZSH_THEME="bira"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git-flow ruby gem rvm brew github osx)
+plugins=(brew git github osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -51,3 +51,6 @@ export PATH=/usr/local/bin:$PATH
 
 # tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+
+# postgressql
+export PGDATA=/usr/local/var/postgres
