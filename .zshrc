@@ -6,8 +6,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # export ZSH_THEME="robbyrussell"
-export ZSH_THEME="bira"
-# export ZSH_THEME="gallois"
+# export ZSH_THEME="bira"
+export ZSH_THEME="gallois"
 # export ZSH_THEME="powerline"
 
 # Set to this to use case-sensitive completion
@@ -54,3 +54,14 @@ export PATH=/usr/local/bin:$PATH
 
 # postgressql
 export PGDATA=/usr/local/var/postgres
+
+# added by travis gem
+source /Users/gyo/.travis/travis.sh
+
+setopt nonomatch
+
+
+# temp
+
+export AWS_KEY=AKIAIXYLDBN6DVV6LBAQ
+export AWS_SECRET=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

@@ -57,6 +57,14 @@ alias pgc='pg_ctl'
 
 # spring
 alias s='spring'
+alias srdm='s rake db:migrate db:test:clone'
+alias srtc='s rake db:test:clone'
 
 # heroku
 alias h='heroku'
+
+# MyNavi
+alias srgdd='s rake db:generate_dummy_data'
+
+#github
+alias gb='hub browse'
