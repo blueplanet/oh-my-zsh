@@ -24,7 +24,7 @@ export ZSH_THEME="gallois"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew git github osx)
+plugins=(brew git osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -59,9 +59,3 @@ export PGDATA=/usr/local/var/postgres
 source /Users/gyo/.travis/travis.sh
 
 setopt nonomatch
-
-
-# temp
-
-export AWS_KEY=AKIAIXYLDBN6DVV6LBAQ
-export AWS_SECRET=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
