@@ -38,24 +38,24 @@ zstyle ':completion:*' completer _oldlist _complete
 # % zle -N zle-keymap-select auto-fu-zle-keymap-select
 # (This enables the afu-vicmd keymap switching coordinates a bit.)
 #
-
+export LC_ALL=en_US.UTF-8
 export EDITOR="subl -w"
 
 # 音を消す
 setopt no_beep
 
+export PGDATA=/usr/local/var/postgres
+export PATH=/usr/local/bin:$PATH
+
 # rbenv
 eval "$(rbenv init -)"
 
-export PATH=/usr/local/bin:$PATH
+
 
 # tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
-# postgressql
-export PGDATA=/usr/local/var/postgres
-
-# added by travis gem
-source /Users/gyo/.travis/travis.sh
-
 setopt nonomatch
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

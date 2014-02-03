@@ -65,6 +65,7 @@ alias h='heroku'
 
 # MyNavi
 alias srgdd='s rake db:generate_dummy_data'
+alias beps='be rake parallel:prepare parallel:spec'
 
 #github
 alias gb='hub browse'
