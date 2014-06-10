@@ -5,9 +5,9 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-# export ZSH_THEME="robbyrussell"
+export ZSH_THEME="robbyrussell"
 # export ZSH_THEME="bira"
-export ZSH_THEME="gallois"
+# export ZSH_THEME="gallois"
 # export ZSH_THEME="powerline"
 
 # Set to this to use case-sensitive completion
@@ -59,3 +59,12 @@ setopt nonomatch
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# 長時間のコマンドを通知するプラグイン
+source ~/.oh-my-zsh/custom/zsh-notify/notify.plugin.zsh
+
+# docker 
+export DOCKER_HOST=tcp://localhost:4243
+
+# autojump
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh

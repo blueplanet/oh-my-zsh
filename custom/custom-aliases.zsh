@@ -61,11 +61,15 @@ alias srdm='s rake db:migrate db:test:clone'
 alias srtc='s rake db:test:clone'
 
 # heroku
-alias h='heroku'
+alias h='hk'
 
 # MyNavi
-alias srgdd='s rake db:generate_dummy_data'
+alias srgdd='s rake db:generate_dummy_data db:test:clone'
 alias beps='be rake parallel:prepare parallel:spec'
 
 #github
 alias gb='hub browse'
+
+alias m='mux'
+
+alias p='powder'
