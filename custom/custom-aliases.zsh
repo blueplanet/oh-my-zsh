@@ -37,6 +37,10 @@ alias b=bundle
 alias bi='bundle install'
 alias be='bundle exec'
 alias r='be rails'
+alias ra='be rake'
+alias radm='ra db:migrate'
+alias radr='ra db:rollback'
+alias radt='ra db:test:clone'
 alias rs='be rake spec'
 alias brdm='be rake db:migrate db:test:clone'
 

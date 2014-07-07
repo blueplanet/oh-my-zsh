@@ -64,7 +64,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 source ~/.oh-my-zsh/custom/zsh-notify/notify.plugin.zsh
 
 # docker 
-export DOCKER_HOST=tcp://localhost:4243
+export DOCKER_HOST=tcp://192.168.59.103:2375
 
 # autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
