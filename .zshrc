@@ -24,7 +24,7 @@ export ZSH_THEME="robbyrussell"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew git osx)
+plugins=(brew git osx autojump)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -63,8 +63,15 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # 長時間のコマンドを通知するプラグイン
 source ~/.oh-my-zsh/custom/zsh-notify/notify.plugin.zsh
 
-# docker 
+# docker
 export DOCKER_HOST=tcp://192.168.59.103:2375
 
 # autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+source /Users/gyo/.oh-my-zsh/custom/zaw/zaw.zsh
+
+eval "$(direnv hook $0)"
+
+# added by travis gem
+[ -f /Users/gyo/.travis/travis.sh ] && source /Users/gyo/.travis/travis.sh
+

@@ -6,6 +6,7 @@ alias la='ll -a'
 # git
 alias g='git'
 alias ga="g add"
+alias gbr='g branch'
 alias gc='g commit'
 alias gca='gc --amend'
 alias gp='g push'
@@ -36,8 +37,8 @@ alias o='open'
 alias b=bundle
 alias bi='bundle install'
 alias be='bundle exec'
-alias r='be rails'
-alias ra='be rake'
+alias r=rails
+alias ra=rake
 alias radm='ra db:migrate'
 alias radr='ra db:rollback'
 alias radt='ra db:test:clone'
@@ -77,3 +78,6 @@ alias gb='hub browse'
 alias m='mux'
 
 alias p='powder'
+
+# docker
+alias dk='docker'
