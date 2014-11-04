@@ -28,18 +28,19 @@ plugins=(brew git osx autojump)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-autoload -U url-quote-magic
-source $ZSH/auto-fu/auto-fu.zsh
-zle-line-init () {auto-fu-init;}; zle -N zle-line-init
-zstyle ':completion:*' completer _oldlist _complete
-# (If you have a lot of completer, please insert _oldlist before _complete.)
-# 4) establish `zle-keymap-select' containing `auto-fu-zle-keymap-select'.
-# % zle -N zle-keymap-select auto-fu-zle-keymap-select
-# (This enables the afu-vicmd keymap switching coordinates a bit.)
-#
 export LC_ALL=en_US.UTF-8
 export EDITOR="subl -w"
+
+# # change to zsh-autosuggestions
+# # Setup zsh-autosuggestions
+# source ~/.zsh-autosuggestions/autosuggestions.zsh
+#
+# # Enable autosuggestions automatically
+# zle-line-init() {
+#     zle autosuggest-start
+# }
+# zle -N zle-line-init
+
 
 # 音を消す
 setopt no_beep
@@ -51,7 +52,6 @@ export PATH=/usr/local/bin:$PATH
 eval "$(rbenv init -)"
 
 
-
 # tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
@@ -60,18 +60,13 @@ setopt nonomatch
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# 長時間のコマンドを通知するプラグイン
-source ~/.oh-my-zsh/custom/zsh-notify/notify.plugin.zsh
-
 # docker
-export DOCKER_HOST=tcp://192.168.59.103:2375
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/gyo/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
 
 # autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 source /Users/gyo/.oh-my-zsh/custom/zaw/zaw.zsh
 
 eval "$(direnv hook $0)"
-
-# added by travis gem
-[ -f /Users/gyo/.travis/travis.sh ] && source /Users/gyo/.travis/travis.sh
-
