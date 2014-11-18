@@ -45,8 +45,8 @@ alias radt='ra db:test:clone'
 alias rs='be rake spec'
 alias brdm='be rake db:migrate db:test:clone'
 
-# SublimeText2
-alias e='subl'
+# atom
+alias e='atom'
 
 # tmux
 alias tm='tmux'
