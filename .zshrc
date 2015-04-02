@@ -9,7 +9,7 @@ export ZSH_THEME="robbyrussell"
 # export ZSH_THEME="bira"
 # export ZSH_THEME="gallois"
 
-plugins=(brew git osx)
+plugins=(brew git osx rake-fast)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -32,7 +32,7 @@ export DOCKER_CERT_PATH=/Users/gyo/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
 
 source /usr/local/share/zsh/site-functions/_aws
-eval 
+eval
 _direnv_hook() {
   eval "$(direnv export zsh)";
 }
