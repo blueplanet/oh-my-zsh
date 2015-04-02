@@ -72,6 +72,9 @@ alias h='hk'
 alias srgdd='s rake db:generate_dummy_data db:test:clone'
 alias beps='be rake parallel:prepare parallel:spec'
 
+# grep
+alias -g G='| grep'
+
 #github
 alias gb='hub browse'
 

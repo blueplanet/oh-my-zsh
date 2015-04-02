@@ -30,3 +30,16 @@ eval "$(rbenv init -)"
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/gyo/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
+
+source /usr/local/share/zsh/site-functions/_aws
+eval 
+_direnv_hook() {
+  eval "$(direnv export zsh)";
+}
+typeset -ag precmd_functions
+if [[ -z $precmd_functions[(r)_direnv_hook] ]]; then
+  precmd_functions+=_direnv_hook;
+fi
+
+# added by travis gem
+[ -f /Users/gyo/.travis/travis.sh ] && source /Users/gyo/.travis/travis.sh
