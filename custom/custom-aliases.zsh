@@ -84,3 +84,4 @@ alias p='powder'
 
 # docker
 alias dk='docker'
+alias dk='docker-machine'
