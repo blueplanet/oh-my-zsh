@@ -26,12 +26,6 @@ export EDITOR=atom
 
 eval "$(rbenv init -)"
 
-# docker
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/gyo/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-
-source /usr/local/share/zsh/site-functions/_aws
 eval
 _direnv_hook() {
   eval "$(direnv export zsh)";
