@@ -7,7 +7,7 @@ alias la='ll -a'
 alias g='git'
 alias ga="g add"
 alias gbr='g branch'
-alias gc='g commit'
+alias gc='g commit -v'
 alias gca='gc --amend'
 alias gp='g push'
 alias gd='g diff --word-diff'
@@ -49,10 +49,12 @@ alias brdm='be rake db:migrate db:test:clone'
 alias e='atom'
 
 # tmux
+alias tmux='direnv exec / tmux'
 alias tm='tmux'
 alias tma='tmux attach -t'
 alias tml='tmux list-window'
 alias tmls='tmux list-sessions'
+alias tmks='tmux kill-session -t'
 
 # vagrant
 alias v='vagrant'
@@ -66,22 +68,35 @@ alias srdm='s rake db:migrate db:test:clone'
 alias srtc='s rake db:test:clone'
 
 # heroku
-alias h='hk'
+alias hk='heroku'
 
 # MyNavi
 alias srgdd='s rake db:generate_dummy_data db:test:clone'
 alias beps='be rake parallel:prepare parallel:spec'
 
 # grep
-alias -g G='| grep'
+alias G='| grep'
 
 #github
-alias gb='hub browse'
+alias hb='hub browse'
+alias hpr='hub pull-request --browse'
+alias pr='pivotal_tracker_pr create'
 
-alias m='mux'
+alias mc='m'
+alias m='tmuxinator'
 
 alias p='powder'
 
 # docker
 alias dk='docker'
-alias dk='docker-machine'
+alias dm='docker-machine'
+
+# tail
+alias tf='tail -f'
+alias tl='tail -f log/test.log'
+
+# less
+alias lr='less -R'
+
+# ruby install
+alias ruby-install='RUBY_CONFIGURE_OPTS="--with-readline-dir=$(brew --prefix readline) --with-openssl-dir=$(brew --prefix openssl)" rbenv install'
