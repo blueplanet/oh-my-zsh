@@ -25,7 +25,7 @@ export PATH=/usr/local/bin:$PATH
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 
-export EDITOR=atom
+export EDITOR=code
 
 eval "$(rbenv init -)"
 
@@ -43,5 +43,7 @@ export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

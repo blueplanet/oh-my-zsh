@@ -46,7 +46,7 @@ alias rs='be rake spec'
 alias brdm='be rake db:migrate db:test:clone'
 
 # atom
-alias e='atom'
+alias e='code'
 
 # tmux
 alias tmux='direnv exec / tmux'
