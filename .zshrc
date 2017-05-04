@@ -25,7 +25,7 @@ export PATH=/usr/local/bin:$PATH
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 
-export EDITOR=code
+export EDITOR=atom
 
 eval "$(rbenv init -)"
 
@@ -47,3 +47,19 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+
+# startup docker-machine
+DOCKER_MACHINE="default"
+if docker-machine status $DOCKER_MACHINE | grep "Running" &> /dev/null
+  then
+    eval "$(docker-machine env $DOCKER_MACHINE)"
+  else
+    docker-machine start $DOCKER_MACHINE && eval "$(docker-machine env $DOCKER_MACHINE)"
+fi
+eval $(docker-machine env $DOCKER_MACHINE)
+
+export PATH="$HOME/.ndenv/bin:$PATH"
+eval "$(ndenv init -)"

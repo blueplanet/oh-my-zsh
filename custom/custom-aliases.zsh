@@ -31,6 +31,8 @@ alias t='tig'
 alias ts='t status'
 
 # editor
+alias e='atom'
+
 alias o='open'
 
 # ruby / rails
@@ -44,9 +46,6 @@ alias radr='ra db:rollback'
 alias radt='ra db:test:clone'
 alias rs='be rake spec'
 alias brdm='be rake db:migrate db:test:clone'
-
-# atom
-alias e='code'
 
 # tmux
 alias tmux='direnv exec / tmux'
@@ -90,6 +89,7 @@ alias p='powder'
 # docker
 alias dk='docker'
 alias dm='docker-machine'
+alias dc='docker-compose'
 
 # tail
 alias tf='tail -f'
